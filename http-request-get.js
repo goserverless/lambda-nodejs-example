@@ -19,3 +19,5 @@ exports.handler = (event, context, callback) => {
       callback(new Error(e.message))
     });
 };
+
+// We then can use Cloudwatch event to run this function, for example: 0 16 * * ? *
